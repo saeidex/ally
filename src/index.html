@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>hello</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI Ally</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com/"></script>
   </head>
 
-  <body class="container mx-auto">
+  <body class="px-12 mx-auto max-w-screen-lg">
     <header
-      class="w-full px-12 h-14 text-slate-900 flex justify-between items-center"
+      class="w-full px-12 h-20 text-slate-900 flex justify-between items-center"
     >
-      <h1 class="text-xl tracking-tighter font-bold">hello</h1>
+      <h1 class="text-xl tracking-tighter font-bold">ally</h1>
       <nav>
-        <ul class="flex space-x-4">
+        <ul class="flex font-semibold space-x-6">
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -19,41 +23,78 @@
           <li></li>
         </ul>
       </nav>
-      <a class="bg-cyan-400 px-4 py-1 rounded-3xl" href="#">Sign in</a>
+      <a class="bg-cyan-400 px-4 pb-2 pt-1 rounded-3xl font-semibold" href="#"
+        >Sign in</a
+      >
     </header>
     <main>
       <section
-        class="bg-zinc-900 text-white rounded-[50px] w-full h-[70vh] flex items-center justify-around"
+        class="bg-zinc-900 text-white rounded-[36px] flex items-center pl-28 justify-between w-full h-[70vh] overflow-hidden"
       >
-        <aside>
-          <div class="flex flex-col space-y-4">
-            <h2 class="text-5xl font-bold">
+        <aside class="flex flex-col h-auto justify-center space-y-12">
+          <div>
+            <h2 class="text-4xl font-bold pb-4 leading-9">
               Unleash the full<br />
               potential of AI
             </h2>
-            <span class="text-cyan-400 w-[50ch] text-justify">
+            <p class="text-zinc-400 max-w-[38ch] text-sm">
               AI Ally is a versatile assistant that utilizes state-of-the-art
               natural language processing to provide real-time support and
               assistance across various domains.
-            </span>
-            <a class="bg-cyan-400 w-fit px-4 py-2 rounded-full" href="#">Get the App →</a>
+            </p>
+          </div>
+          <div>
+            <a
+              class="bg-cyan-400 text-zinc-800 font-bold mr-4 w-fit px-8 pt-2 pb-3 rounded-3xl"
+              href="#"
+              >Get the App →</a
+            >
             <a>More</a>
           </div>
-          <div>
-            <p>4.8</p>
-            <p>700k+</p>
-          </div>
-          <div>
-            <p>Rating on AppStore</p>
-            <p>Active users</p>
+          <div class="flex space-x-7">
+            <div>
+              <p class="text-3xl font-bold">4.8</p>
+              <p class="text-sm">Rating on AppStore</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold">700k+</p>
+              <p class="text-sm">Active users</p>
+            </div>
           </div>
         </aside>
-        <div>
-          <img src="#" alt="mockup" />
-        </div>
+        <aside class="w-96 h-full relative">
+          <img
+            class="absolute top-20 -right-12 rounded-[36px]"
+            src="mockup.png"
+            alt="mockup"
+          />
+          <img
+            class="absolute w-36 top-28 drop-shadow-2xl right-36"
+            src="cute.png"
+            alt="cute-robot"
+          />
+          <div
+            class="text-center absolute right-[150px] top-64 text-zinc-800 font-semibold"
+          >
+            <h1 class="font-extrabold tracking-tight font-mono">
+              Hello, Humooon!
+            </h1>
+          </div>
+          <p
+            class="absolute text-[10px] left-[108px] top-[282px] text-zinc-700 w-32"
+          >
+            I am Allay! Welcome to our AI assistants app. We are excited to have
+            you on board.
+          </p>
+          <span
+            class="absolute bottom-28 left-[140px] text-zinc-800 font-bold font-mono text-sm bg-blue-300 px-4 py-1 rounded-2xl"
+          >
+            Next</span
+          >
+        </aside>
       </section>
       <section>
-        <h1>Different Destination</h1>
+        <h1 class="font-nabla">Different Destination</h1>
         <div>
           <p>
             We explore the diverse ways in which this technology can
