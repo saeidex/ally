@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-bricolage {
+        font-family: "Bricolage Grotesque", sans-serif;
+      }
+}
+
+@layer utilities {
+footer nav a {
+    text-decoration: none;
+    background-image: linear-gradient(#ffffff, #ffffff),
+      linear-gradient(#cffafe,#67e8f9),
+      linear-gradient(#e0e7ff, #a5b4fc);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 2s linear, background-position 2s linear;
+  }
+  
+ footer nav a:hover {
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+  }
+}

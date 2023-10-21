@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="scroll-smooth bg-gradient-to-br from-green-200 to-orange-200">
   <head>
     <title>AI Ally</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -8,20 +8,22 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com/"></script>
+    <!-- <script src="https://cdn.tailwindcss.com/"></script>
     <style>
       .font-bricolage {
         font-family: "Bricolage Grotesque", sans-serif;
       }
-    </style>
+    </style> -->
   </head>
-  <body class="mx-auto max-w-[960px] font-bricolage">
+  <body
+    class="font-bricolage mx-auto min-w-[992px] max-w-[992px] rounded-xl bg-white"
+  >
     <header
-      class="w-full px-20 h-20 text-slate-900 flex justify-between items-center"
+      class="flex h-20 w-full items-center justify-between px-20 text-slate-900"
     >
-      <h1 class="text-xl cursor-pointer tracking-tighter font-bold">ally</h1>
+      <h1 class="cursor-pointer text-2xl font-bold tracking-tighter">ally</h1>
       <nav>
-        <ul class="flex font-semibold space-x-6 text-sm">
+        <ul class="flex space-x-6 text-sm font-semibold">
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -29,26 +31,27 @@
         </ul>
       </nav>
       <a
-        class="overflow-hidden inline-flex items-center justify-center relative bg-cyan-400 px-4 py-2 rounded-3xl text-sm font-semibold tracking-tighter group"
+        class="group relative inline-flex items-center justify-center overflow-hidden rounded-3xl bg-cyan-300 px-4 py-2 text-sm font-semibold tracking-tighter"
         href="#"
       >
         <span
-          class="absolute w-0 h-0 transition-all duration-500 ease-out bg-cyan-300 rounded-full group-hover:w-56 group-hover:h-56"
+          class="absolute h-0 w-0 rounded-full bg-cyan-200 transition-all duration-500 ease-out group-hover:h-56 group-hover:w-56"
         ></span>
         <span class="relative">Sign in</span>
       </a>
     </header>
+    <!--
     <section class="px-4">
       <div
-        class="bg-gradient-to-r from-zinc-900 from-50% via-zinc-700 via-80% to-zinc-900 text-white rounded-[48px] flex items-center pl-28 justify-between w-full h-[70vh] overflow-hidden drop-shadow-2xl shadow-2xl"
+        class="py-20 pl-28"
       >
-        <aside class="flex flex-col h-auto justify-center space-y-12">
+        <aside class="w-1/2 flex-col space-y-8">
           <div>
             <h2 class="text-4xl font-bold pb-4 leading-9">
               Unleash the full<br />
               potential of AI
             </h2>
-            <p class="text-zinc-400 max-w-[32ch] text-sm">
+            <p class="text-zinc-400 min-w-[30ch] max-w-[32ch] text-sm">
               AI Ally is a versatile assistant that utilizes state-of-the-art
               natural language processing to provide real-time support and
               assistance across various domains.
@@ -77,13 +80,9 @@
             </div>
           </div>
         </aside>
-        <aside class="w-96 h-full relative">
-          <img
-            class="absolute top-20 -right-12 rounded-[36px]"
-            src="mockup.png"
-            alt="mockup"
-          />
-          <!-- <img
+        <aside class="w-1/2 relative bg-red-50 z-50">
+          <img class="absolute -top-28" src="mockup.png" alt="mockup" />
+           <img
             class="absolute w-36 top-28 drop-shadow-2xl right-36"
             src="cute.png"
             alt="cute-robot"
@@ -105,8 +104,19 @@
             class="absolute bottom-28 left-[140px] text-zinc-800 font-bold font-mono text-sm bg-blue-300 px-4 py-1 rounded-2xl"
           >
             Next</span
-          > -->
+          > 
         </aside>
+      </div>
+    </section>
+  -->
+    <section
+      class="mx-auto mb-24 aspect-[16/8] max-h-[476.6px] w-[96%] overflow-hidden rounded-[48px] bg-gradient-to-r from-zinc-900 from-50% via-zinc-700 via-80% to-zinc-900 text-white shadow-xl drop-shadow-xl"
+    >
+      <div
+        class="pattern-isometric flex h-full w-full items-center justify-evenly pattern-bg-transparent pattern-zinc-800 pattern-opacity-20 pattern-size-16"
+      >
+        <aside class="h-4/6 w-5/12"></aside>
+        <aside class="h-4/6 w-5/12"></aside>
       </div>
     </section>
     <section class="my-24 px-20">
@@ -122,7 +132,7 @@
         </p>
         <div class="w-[calc((100%-64px)/3)] text-right">
           <a
-            class="cursor-pointer hover:underline decoration-wavy decoration-cyan-500 underline underline-offset-2 hover:decoration-dashed hover:underline-offset-1 text-sm transition-all duration-100"
+            class="cursor-pointer text-sm underline decoration-cyan-500 decoration-wavy underline-offset-2 transition-all duration-100 hover:underline hover:decoration-dashed hover:underline-offset-1"
             src="#_"
             >Discover all applications</a
           >
@@ -130,49 +140,49 @@
       </div>
       <div class="flex justify-between space-x-4">
         <div
-          class="relative bg-cover bg-no-repeat aspect-square flex-grow bg-zinc-200 rounded-3xl"
+          class="relative aspect-square flex-grow rounded-3xl bg-zinc-200 bg-cover bg-no-repeat"
           style="background-image: url(student.jpg)"
         >
           <span
-            class="absolute hover:bg-cyan-300 transition-all duration-500 cursor-pointer top-5 left-5 inline-flex items-center rounded-2xl bg-gray-50 px-4 py-2 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+            class="absolute left-5 top-5 inline-flex cursor-pointer items-center rounded-2xl bg-gray-50 px-4 py-2 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 transition-all duration-500 hover:bg-cyan-300"
             >Try it now</span
           >
         </div>
         <div
-          class="relative bg-cover bg-no-repeat aspect-square flex-grow bg-zinc-200 rounded-3xl"
+          class="relative aspect-square flex-grow rounded-3xl bg-zinc-200 bg-cover bg-no-repeat"
           style="background-image: url(proffessional.jpeg)"
         >
           <span
-            class="absolute hover:bg-cyan-300 transition-all duration-500 cursor-pointer top-5 left-5 inline-flex items-center rounded-2xl bg-gray-50 px-4 py-2 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+            class="absolute left-5 top-5 inline-flex cursor-pointer items-center rounded-2xl bg-gray-50 px-4 py-2 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 transition-all duration-500 hover:bg-cyan-300"
             >Try it now</span
           >
         </div>
         <div
-          class="relative bg-cover bg-no-repeat bg-left aspect-square flex-grow bg-zinc-200 rounded-3xl"
+          class="relative aspect-square flex-grow rounded-3xl bg-zinc-200 bg-cover bg-left bg-no-repeat"
           style="background-image: url(writer.jpeg)"
         >
           <span
-            class="absolute hover:bg-cyan-300 transition-all duration-500 cursor-pointer top-5 left-5 inline-flex items-center rounded-2xl bg-gray-50 px-4 py-2 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+            class="absolute left-5 top-5 inline-flex cursor-pointer items-center rounded-2xl bg-gray-50 px-4 py-2 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 transition-all duration-500 hover:bg-cyan-300"
             >Try it now</span
           >
         </div>
       </div>
-      <div class="flex w-full justify-between mt-4">
-        <div class="w-[calc((100%-64px)/3)] aspect-video">
+      <div class="mt-4 flex w-full justify-between">
+        <div class="aspect-video w-[calc((100%-64px)/3)]">
           <h1 class="text-2xl font-bold">Students</h1>
           <p class="text-xs">
             AI Ally can assist in research, provide learning materials, and
             answer questions
           </p>
         </div>
-        <div class="w-[calc((100%-64px)/3)] aspect-video">
+        <div class="aspect-video w-[calc((100%-64px)/3)]">
           <h1 class="text-2xl font-bold">Proffessionals</h1>
           <p class="text-xs">
             AI Ally can provide quick access to relevant information and offer
             data analysis insights
           </p>
         </div>
-        <div class="w-[calc((100%-64px)/3)] aspect-video">
+        <div class="aspect-video w-[calc((100%-64px)/3)]">
           <h1 class="text-2xl font-bold">Writers</h1>
           <p class="text-xs">
             AI Ally can halp writers by generating suggesting improvements in
@@ -182,17 +192,17 @@
       </div>
       <div class="text-center">
         <a
-          class="overflow-hidden mt-8 inline-flex items-center justify-center relative bg-cyan-300 px-8 py-3 rounded-3xl text-base font-semibold tracking-tighter group"
+          class="group relative mt-8 inline-flex items-center justify-center overflow-hidden rounded-3xl bg-cyan-300 px-8 py-3 text-base font-semibold tracking-tighter"
           href="#"
         >
           <span
-            class="absolute w-0 h-0 transition-all duration-500 ease-out bg-cyan-200 rounded-full group-hover:w-80 group-hover:h-80"
+            class="absolute h-0 w-0 rounded-full bg-cyan-200 transition-all duration-500 ease-out group-hover:h-80 group-hover:w-80"
           ></span>
           <span class="relative">More than 50 other destinations</span>
         </a>
       </div>
     </section>
-    <section class="h-[90vh] px-20 bg-zinc-100 flex justify-center">
+    <section class="flex h-[90vh] justify-center bg-zinc-100 px-20">
       <div class="w-1/2"></div>
       <div class="w-1/2"></div>
     </section>
@@ -210,16 +220,16 @@
       </div>
       <div class="flex space-x-4">
         <div
-          class="aspect-square flex-grow bg-pink-200 rounded-3xl w-[calc((100%-64px)/3)]"
+          class="aspect-square w-[calc((100%-64px)/3)] flex-grow rounded-3xl bg-pink-200"
         >
-          <p class="h-3/4 p-6 tracking-tight leading-5">
+          <p class="h-3/4 p-6 leading-5 tracking-tight">
             "With the help of AI Ally, my work has become much easier and
             efficient. It provides quick and accurate answers to any questions I
             come across"
           </p>
-          <div class="flex text-sm items-center space-x-3 px-4">
+          <div class="flex items-center space-x-3 px-4 text-sm">
             <div
-              class="w-10 rounded-full h-10 bg-zinc-100 bg-cover bg-no-repeat bg-center bg-blend-color-burn"
+              class="h-10 w-10 rounded-full bg-zinc-100 bg-cover bg-center bg-no-repeat bg-blend-color-burn"
               style="background-image: url(avater.jpg)"
             ></div>
             <div>
@@ -229,16 +239,16 @@
           </div>
         </div>
         <div
-          class="aspect-square flex-grow bg-cyan-200 rounded-3xl w-[calc((100%-64px)/3)]"
+          class="aspect-square w-[calc((100%-64px)/3)] flex-grow rounded-3xl bg-cyan-200"
         >
-          <p class="h-3/4 p-6 tracking-tight leading-5">
+          <p class="h-3/4 p-6 leading-5 tracking-tight">
             "The excellent voice recognition quality of AI Ally app makes it
             perfect for dictation and note taking. I have never come across such
             accuracy before"
           </p>
-          <div class="flex text-sm items-center space-x-3 px-4">
+          <div class="flex items-center space-x-3 px-4 text-sm">
             <div
-              class="w-10 rounded-full h-10 bg-zinc-100 bg-cover bg-no-repeat bg-center bg-blend-color-burn"
+              class="h-10 w-10 rounded-full bg-zinc-100 bg-cover bg-center bg-no-repeat bg-blend-color-burn"
               style="background-image: url(avater.jpg)"
             ></div>
             <div>
@@ -248,15 +258,15 @@
           </div>
         </div>
         <div
-          class="aspect-square flex-grow bg-violet-200 rounded-3xl w-[calc((100%-64px)/3)]"
+          class="aspect-square w-[calc((100%-64px)/3)] flex-grow rounded-3xl bg-violet-200"
         >
-          <p class="h-3/4 p-6 tracking-tight leading-5">
+          <p class="h-3/4 p-6 leading-5 tracking-tight">
             "I love how AI Ally personalizes to my needs and offers
             recommendations and solutions based on my preferences and behaviors"
           </p>
-          <div class="flex text-sm items-center space-x-3 px-4">
+          <div class="flex items-center space-x-3 px-4 text-sm">
             <div
-              class="w-10 rounded-full h-10 bg-zinc-100 bg-cover bg-no-repeat bg-center bg-blend-color-burn"
+              class="h-10 w-10 rounded-full bg-zinc-100 bg-cover bg-center bg-no-repeat bg-blend-color-burn"
               style="background-image: url(avater.jpg)"
             ></div>
             <div>
@@ -267,32 +277,32 @@
         </div>
       </div>
     </section>
-    <section class="px-4 my-24">
-      <div class="px-16 py-20 bg-zinc-900 rounded-[48px]">
-        <h1 class="text-4xl text-zinc-100 pb-6">Choose your favorite plan</h1>
+    <section class="my-24 px-4">
+      <div class="rounded-[48px] bg-zinc-900 px-16 py-20">
+        <h1 class="pb-6 text-4xl text-zinc-100">Choose your favorite plan</h1>
         <div>
           <div
-            class="flex text-lg font-semibold bg-zinc-800 rounded-2xl text-zinc-100 py-4 px-8 justify-between items-center"
+            class="flex items-center justify-between rounded-2xl bg-zinc-800 px-8 py-4 text-lg font-semibold text-zinc-100"
           >
             <div class="w-4/12"><h3>Subscription level</h3></div>
             <div class="w-2/12 text-center">
-              <span class="bg-lime-200 text-zinc-800 block py-1 rounded-lg"
+              <span class="block rounded-lg bg-lime-200 py-1 text-zinc-800"
                 >Basic</span
               >
             </div>
             <div class="w-2/12 text-center">
-              <span class="bg-pink-200 text-zinc-800 block py-1 rounded-lg"
+              <span class="block rounded-lg bg-pink-200 py-1 text-zinc-800"
                 >Advanced</span
               >
             </div>
             <div class="w-2/12 text-center">
-              <span class="bg-yellow-200 text-zinc-800 block py-1 rounded-lg"
+              <span class="block rounded-lg bg-yellow-200 py-1 text-zinc-800"
                 >Premium</span
               >
             </div>
           </div>
           <div
-            class="flex border-b border-zinc-800 text-zinc-100 py-3 px-8 justify-between"
+            class="flex justify-between border-b border-zinc-800 px-8 py-3 text-zinc-100"
           >
             <div class="w-4/12"><h3>Number of Users</h3></div>
             <div class="w-2/12 text-center"><span>1</span></div>
@@ -302,7 +312,7 @@
             <div class="w-2/12 text-center">Unlimited</div>
           </div>
           <div
-            class="flex border-b border-zinc-800 text-zinc-100 py-3 px-8 justify-between"
+            class="flex justify-between border-b border-zinc-800 px-8 py-3 text-zinc-100"
           >
             <div class="w-4/12"><h3>Customer Support</h3></div>
             <div class="w-2/12 text-center"><span>Online</span></div>
@@ -312,7 +322,7 @@
             <div class="w-2/12 text-center">Premium</div>
           </div>
           <div
-            class="flex border-b border-zinc-800 text-zinc-100 py-3 px-8 justify-between"
+            class="flex justify-between border-b border-zinc-800 px-8 py-3 text-zinc-100"
           >
             <div class="w-4/12"><h3>Money Requests</h3></div>
             <div class="w-2/12 text-center"><span>1000</span></div>
@@ -322,7 +332,7 @@
             <div class="w-2/12 text-center">Unlimited</div>
           </div>
           <div
-            class="flex border-b border-zinc-800 text-zinc-100 py-3 px-8 justify-between"
+            class="flex justify-between border-b border-zinc-800 px-8 py-3 text-zinc-100"
           >
             <div class="w-4/12"><h3>Data Packages</h3></div>
             <div class="w-2/12 text-center"><span>1 GB</span></div>
@@ -332,7 +342,7 @@
             <div class="w-2/12 text-center">10 GB</div>
           </div>
           <div
-            class="flex border-b border-zinc-800 text-zinc-100 py-3 px-8 justify-between"
+            class="flex justify-between border-b border-zinc-800 px-8 py-3 text-zinc-100"
           >
             <div class="w-4/12"><h3>Flexible Cancellation</h3></div>
             <div class="w-2/12 text-center"><span>Avaiable</span></div>
@@ -342,7 +352,7 @@
             <div class="w-2/12 text-center">Premium</div>
           </div>
           <div
-            class="flex border-b border-zinc-800 text-zinc-100 py-3 px-8 justify-between"
+            class="flex justify-between border-b border-zinc-800 px-8 py-3 text-zinc-100"
           >
             <div class="w-4/12"><h3>Monthly Cost</h3></div>
             <div class="w-2/12 text-center text-2xl"><span>$9.99</span></div>
@@ -354,13 +364,13 @@
         </div>
       </div>
     </section>
-    <footer class="mb-24">
+    <footer class="pb-24">
       <div
-        class="w-full px-20 h-fit text-slate-900 flex justify-between items-center"
+        class="flex h-fit w-full items-center justify-between px-20 text-slate-900"
       >
-        <h1 class="text-xl cursor-pointer tracking-tighter font-bold">ally</h1>
+        <h1 class="cursor-pointer text-xl font-bold tracking-tighter">ally</h1>
         <nav>
-          <ul class="flex font-semibold space-x-4 text-sm">
+          <ul class="flex space-x-4 text-sm font-semibold">
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
@@ -368,20 +378,21 @@
           </ul>
         </nav>
         <nav>
-          <ul class="flex font-semibold space-x-4 text-sm">
+          <ul class="flex space-x-4 text-sm font-semibold">
             <li><a href="#_">Instagram</a></li>
             <li><a href="#_">Facebook</a></li>
             <li><a href="#_">Twitter</a></li>
           </ul>
         </nav>
       </div>
-      <div class="mx-20 border-b-2 my-6"></div>
-      <div class="px-20 h-fit flex items-center justify-between text-zinc-400">
-        <p class="text-xs font-semibold select-none">
+      <div class="mx-20 my-6 border-b-2"></div>
+      <div class="flex h-fit items-center justify-between px-20 text-zinc-400">
+        <p class="select-none text-xs font-semibold">
           Copyright &copy; 2023 AI Ally
         </p>
-        <p class="text-xs font-semibold cursor-pointer">Privacy Policy</p>
+        <p class="cursor-pointer text-xs font-semibold">Privacy Policy</p>
       </div>
     </footer>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
