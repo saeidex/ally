@@ -6,6 +6,24 @@ module.exports = {
       // fontFamily: {
       //   bricolage: ['"Bricolage Grotesque"', "sans-serif"],
       // },
+      animation: {
+        gradient: "gradient 15s ease infinite",
+      },
+      keyframes: {
+        gradient: {
+          "0%": { "background-position": "0% 20%" },
+          "10%": { "background-position": "20% 40%" },
+          "20%": { "background-position": "40% 60%" },
+          "30%": { "background-position": "60% 80%" },
+          "0%": { "background-position": "80% 100%" },
+          "50%": { "background-position": "100% 80%" },
+          "60%": { "background-position": "80% 60%" },
+          "70%": { "background-position": "60% 40%" },
+          "80%": { "background-position": "40% 20%" },
+          "90%": { "background-position": "20% 0%" },
+          "100%": { "background-position": "50% 100%" },
+        },
+      },
     },
     patterns: {
       opacities: {
